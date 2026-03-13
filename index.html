@@ -19,7 +19,7 @@
       --accent-dim:#3E8A5E;
       --cream:     #EDE8DF;
       --cream-dim: #A8B5AC;
-      --rule:      rgba(111,203,151,0.18);
+      --rule:      rgba(111,203,151,0.18);hh
       --ff-display: 'Cormorant Garamond', Georgia, serif;
       --ff-head:    'Syne', sans-serif;
       --ff-body:    'DM Sans', sans-serif;
@@ -862,28 +862,28 @@
         <p class="cta-sub reveal">No discovery calls that go nowhere. No canned proposals before we've talked. Just a direct conversation about what's actually broken in your operation and what it realistically takes to fix it.</p>
         <p class="reveal" style="font-size:0.82rem;font-weight:300;color:var(--cream-dim);opacity:0.6;">Root Cause Consulting LLC &nbsp;·&nbsp; Georgia, USA</p>
       </div>
-      <div class="cta-right reveal">
+      <form action="https://formspree.io/f/mqeybjkj" method="POST"><div class="cta-right reveal">
         <div class="form-row">
           <div class="form-field">
             <label>First Name</label>
-            <input type="text" placeholder="Austin" />
+            <input type="text" name="firstName" placeholder="Austin" />
           </div>
           <div class="form-field">
             <label>Last Name</label>
-            <input type="text" placeholder="Reid" />
+            <input type="text" name="lastName" placeholder="Reid" />
           </div>
         </div>
         <div class="form-field">
           <label>Business Email</label>
-          <input type="email" placeholder="you@company.com" />
+          <input type="email" name="email" placeholder="you@company.com" />
         </div>
         <div class="form-field">
           <label>Company / Organization</label>
-          <input type="text" placeholder="Your company name" />
+          <input type="text" name="company" placeholder="Your company name" />
         </div>
         <div class="form-field">
           <label>What are you dealing with?</label>
-          <select>
+          <select name="service">
             <option value="" disabled selected>Select the closest match</option>
             <option>SaaS stack isn't working the way it should</option>
             <option>Multi-location deployment went sideways</option>
@@ -894,9 +894,9 @@
         </div>
         <div class="form-field">
           <label>Anything else we should know?</label>
-          <textarea placeholder="Optional — but the more context, the better the conversation."></textarea>
+          <textarea name="message" placeholder="Optional — but the more context, the better the conversation."></textarea>
         </div>
-        <button class="btn-submit">Send It →</button>
+        <button type="submit" class="btn-submit">Send It →</button></form>
       </div>
     </div>
   </section>
